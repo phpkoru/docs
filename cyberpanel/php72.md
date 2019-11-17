@@ -1,4 +1,6 @@
-# CyberPanel'de PHP 7.2 sürümü için PHPkoru Loader'ın Kurulumu #
+# CyberPanel PHP 7.2 için PHPkoru Kullanımı #
+
+## CyberPanel'de PHP 7.2 sürümü için PHPkoru Loader'ın Kurulumu ##
 
 PHPkoru Loader'i CyberPanel PHP 7.2 modülleri dizinine indir.
 ```shell
