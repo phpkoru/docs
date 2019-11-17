@@ -1,7 +1,5 @@
 # CyberPanel'de PHP 7.3 sürümü için PHPkoru Loader'ın Kurulumu #
 
-PHPkoru Loader CyberPanel'de 2 komut ile kolayca kurulabilir.
-
 PHPkoru Loader'i CyberPanel PHP 7.3 modülleri dizinine indir.
 ```shell
 wget https://raw.githubusercontent.com/aponkral/phpkoru/master/loaders/php7.3/phpkoru_loader_v1.0.2_lin_7.3.so -O /usr/local/lsws/lsphp73/lib64/php/modules/phpkoru_loader.so
