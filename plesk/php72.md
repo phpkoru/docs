@@ -5,7 +5,7 @@
 PHPkoru Loader'i Plesk PHP 7.2 modülleri dizinine indir.
 
 ```shell
-wget https://raw.githubusercontent.com/aponkral/phpkoru/master/loaders/php7.2/phpkoru_loader_v1.0.2_lin_7.2.so -O /opt/plesk/php/7.2/lib/php/modules/phpkoru_loader.so
+wget https://cdn.phpkoru.com/loaders/phpkoru_loader_v1.0.2_lin_7.2.so -O /opt/plesk/php/7.2/lib/php/modules/phpkoru_loader.so
 ```
 
 PHPkoru Loader'i ekle
