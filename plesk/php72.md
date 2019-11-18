@@ -1,3 +1,3 @@
-# Plesk'te PHP 7.2 sürümü için PHPkoru Loader'ın Kurulumu #
+# Plesk PHP 7.2 için PHPkoru Kullanımı #
 
-PHPkoru Loader Plesk'te 4 komut ile kolayca kurulabilir.
+## Plesk'te PHP 7.2 sürümü için PHPkoru Loader'ın Kurulumu ##
