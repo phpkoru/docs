@@ -1,6 +1,6 @@
-# cPanel PHP 7.2 için PHPkoru Kullanımı #
+# cPanel PHP 7.2 için PHPkoru Kullanımı
 
-## cPanel'de PHP 7.2 sürümü için PHPkoru Loader'ın Kurulumu ##
+## cPanel'de PHP 7.2 sürümü için PHPkoru Loader'ın Kurulumu
 
 PHPkoru Loader'i cPanel PHP 7.2 modülleri dizinine indir.
 
@@ -18,7 +18,7 @@ cPanel PHP Fpm'leri yeniden başlat
 /scripts/restartsrv_apache_php_fpm
 ```
 
-## cPanel'de PHP 7.2 sürümü için PHPkoru Loader'ın Kaldırması ##
+## cPanel'de PHP 7.2 sürümü için PHPkoru Loader'ın Kaldırması
 
 PHPkoru Loader'ı kaldırmak için aşağıdaki kodu kullanabilirsiniz.
 ```shell
