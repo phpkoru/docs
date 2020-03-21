@@ -1,6 +1,6 @@
-# Plesk PHP 7.2 için PHPkoru Kullanımı #
+# Plesk PHP 7.2 için PHPkoru Kullanımı
 
-## Plesk'te PHP 7.2 sürümü için PHPkoru Loader'ın Kurulumu ##
+## Plesk'te PHP 7.2 sürümü için PHPkoru Loader'ın Kurulumu
 
 PHPkoru Loader'i Plesk PHP 7.2 modülleri dizinine indir.
 
@@ -23,7 +23,7 @@ Plesk PHP 7.2'ü yeniden başlat
 service plesk-php72-fpm restart
 ```
 
-## Plesk'te PHP 7.2 sürümü için PHPkoru Loader'ın Kaldırması ##
+## Plesk'te PHP 7.2 sürümü için PHPkoru Loader'ın Kaldırması
 
 PHPkoru Loader'ı kaldırmak için aşağıdaki kodu kullanabilirsiniz.
 ```shell
