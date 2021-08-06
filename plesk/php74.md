@@ -5,7 +5,7 @@
 PHPkoru Loader'i Plesk PHP 7.4 modülleri dizinine indir.
 
 ```shell
-wget https://cdn.phpkoru.com/loaders/phpkoru_loader_v1.0.2_lin_7.4.so -O /opt/plesk/php/7.4/lib/php/modules/phpkoru_loader.so
+wget https://cdn.phpkoru.com/loaders/phpkoru_loader_v1.0.2_lin_7.4.so -O /opt/plesk/php/7.4/lib64/php/modules/phpkoru_loader.so
 ```
 
 PHPkoru Loader'i ekle
@@ -27,5 +27,5 @@ service plesk-php74-fpm restart
 
 PHPkoru Loader'ı kaldırmak için aşağıdaki kodu kullanabilirsiniz.
 ```shell
-rm -f /opt/plesk/php/7.4/etc/php.d/00-phpkoru.ini && rm -f /opt/plesk/php/7.4/lib/php/modules/phpkoru_loader.so && plesk bin php_handler --reread && service plesk-php74-fpm restart
+rm -f /opt/plesk/php/7.4/etc/php.d/00-phpkoru.ini && rm -f /opt/plesk/php/7.4/lib64/php/modules/phpkoru_loader.so && plesk bin php_handler --reread && service plesk-php74-fpm restart
 ```
