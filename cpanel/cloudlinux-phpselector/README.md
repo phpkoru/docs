@@ -1,3 +1,5 @@
 # cPanel CloudLinux PHP Selector
 
-PHPkoru Loader cPanel CloudLinux PHP Selector'de 3 komut ile kolayca kurulabilir.
+## Using PHPkoru with CloudLinux PHP Selector in cPanel
+
+PHPkoru Loader can be easily installed with 3 commands in cPanel for CloudLinux PHP Selector.

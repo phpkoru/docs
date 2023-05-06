@@ -1,26 +1,25 @@
-# cPanel CloudLinux PHP Selector PHP 7.3 için PHPkoru Kullanımı
+# Using PHPkoru for PHP 7.3 with CloudLinux PHP Selector in cPanel
 
-## cPanel CloudLinux PHP Selector'de PHP 7.3 sürümü için PHPkoru Loader'ın Kurulumu
+## Installation of PHPkoru Loader for PHP version 7.3 with CloudLinux PHP Selector in cPanel
 
-PHPkoru Loader'i cPanel CloudLinux PHP Selector PHP 7.3 modülleri dizinine indir.
-
+Download the PHPkoru Loader into the CloudLinux PHP Selector PHP 7.3 modules directory.
 ```shell
 wget https://cdn.phpkoru.com/loaders/phpkoru_loader_v1.0.2_lin_7.3.so -O /opt/alt/php73/usr/lib64/php/modules/phpkoru_loader.so
 ```
 
-PHPkoru Loader'i ekle
+Enable PHPkoru Loader
 ```shell
 echo -e "; Enable phpkoru_loader extension module\nextension=phpkoru_loader.so" > "/opt/alt/php73/etc/php.d.all/phpkoru.ini"
 ```
 
-cPanel PHP Fpm'leri yeniden başlat
+Restart cPanel PHP FPMs
 ```shell
 /scripts/restartsrv_apache_php_fpm
 ```
 
-## cPanel CloudLinux PHP Selector'de PHP 7.3 sürümü için PHPkoru Loader'ın Kaldırması
+## Removing PHPkoru Loader for PHP Version 7.3 from CloudLinux PHP Selector in cPanel
 
-PHPkoru Loader'ı kaldırmak için aşağıdaki kodu kullanabilirsiniz.
+You can use the following code to uninstall PHPkoru Loader.
 ```shell
 rm -f /opt/alt/php73/etc/php.d.all/phpkoru.ini && rm -f /opt/alt/php73/usr/lib64/php/modules/phpkoru_loader.so && /scripts/restartsrv_apache_php_fpm
 ```
