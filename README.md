@@ -1,3 +1,3 @@
 # PHPkoru
 
-PHPkoru, 2 ayrı hizmetiyle PHP kodlarınızı basit veya profesyonel olarak şifreler ve korur.
+PHPkoru encodes and protects your php code with two different services.
