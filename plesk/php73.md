@@ -1,31 +1,30 @@
-# Plesk PHP 7.3 için PHPkoru Kullanımı
+# Using PHPkoru for PHP 7.3 with Plesk
 
-## Plesk'te PHP 7.3 sürümü için PHPkoru Loader'ın Kurulumu
+## Installation of PHPkoru Loader for PHP version 7.3 with Plesk
 
-PHPkoru Loader'i Plesk PHP 7.3 modülleri dizinine indir.
-
+Download the PHPkoru Loader into the Plesk PHP 7.3 modules directory.
 ```shell
 wget https://cdn.phpkoru.com/loaders/phpkoru_loader_v1.0.2_lin_7.3.so -O /opt/plesk/php/7.3/lib/php/modules/phpkoru_loader.so
 ```
 
-PHPkoru Loader'i ekle
+Enable PHPkoru Loader
 ```shell
 echo "extension=phpkoru_loader.so" > "/opt/plesk/php/7.3/etc/php.d/00-phpkoru.ini"
 ```
 
-Plesk PHP ayarlarını güncelle
-```shell
-plesk bin php_handler --reread
-```
-
-Plesk PHP 7.3'ü yeniden başlat
+Restart Plesk PHP 7.3 FPM
 ```shell
 service plesk-php73-fpm restart
 ```
 
-## Plesk'te PHP 7.3 sürümü için PHPkoru Loader'ın Kaldırması
+Re-read Plesk PHP Handler
+```shell
+plesk bin php_handler --reread
+```
 
-PHPkoru Loader'ı kaldırmak için aşağıdaki kodu kullanabilirsiniz.
+## Removing PHPkoru Loader for PHP Version 7.3 from Plesk
+
+You can use the following code to uninstall PHPkoru Loader.
 ```shell
 rm -f /opt/plesk/php/7.3/etc/php.d/00-phpkoru.ini && rm -f /opt/plesk/php/7.3/lib/php/modules/phpkoru_loader.so && plesk bin php_handler --reread && service plesk-php73-fpm restart
 ```

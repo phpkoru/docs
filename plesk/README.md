@@ -1,3 +1,3 @@
 # Plesk
 
-PHPkoru Loader Plesk'te 4 komut ile kolayca kurulabilir.
+PHPkoru Loader can be easily installed in Plesk with 4 commands.
