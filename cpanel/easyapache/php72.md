@@ -1,26 +1,25 @@
-# cPanel EasyApache 4 PHP 7.2 için PHPkoru Kullanımı
+# Using PHPkoru for PHP 7.2 with EasyApache 4 in cPanel
 
-## cPanel EasyApache 4'de PHP 7.2 sürümü için PHPkoru Loader'ın Kurulumu
+## Installation of PHPkoru Loader for PHP version 7.2 with EasyApache 4 in cPanel
 
-PHPkoru Loader'i cPanel EasyApache 4 PHP 7.2 modülleri dizinine indir.
-
+Download the PHPkoru Loader into the EasyApache 4 PHP 7.2 modules directory.
 ```shell
 wget https://cdn.phpkoru.com/loaders/phpkoru_loader_v1.0.2_lin_7.2.so -O /opt/cpanel/ea-php72/root/usr/lib64/php/modules/phpkoru_loader.so
 ```
 
-PHPkoru Loader'i ekle
+Enable PHPkoru Loader
 ```shell
 echo -e "; Enable phpkoru_loader extension module\nextension=phpkoru_loader.so" > "/opt/cpanel/ea-php72/root/etc/php.d/00-phpkoru.ini"
 ```
 
-cPanel PHP Fpm'leri yeniden başlat
+Restart cPanel PHP FPMs
 ```shell
 /scripts/restartsrv_apache_php_fpm
 ```
 
-## cPanel EasyApache 4'de PHP 7.2 sürümü için PHPkoru Loader'ın Kaldırması
+## Removing PHPkoru Loader for PHP Version 7.2 from EasyApache 4 in cPanel
 
-PHPkoru Loader'ı kaldırmak için aşağıdaki kodu kullanabilirsiniz.
+You can use the following code to uninstall PHPkoru Loader.
 ```shell
 rm -f /opt/cpanel/ea-php72/root/etc/php.d/00-phpkoru.ini && rm -f /opt/cpanel/ea-php72/root/usr/lib64/php/modules/phpkoru_loader.so && /scripts/restartsrv_apache_php_fpm
 ```
