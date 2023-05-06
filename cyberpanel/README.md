@@ -1,3 +1,3 @@
 # CyberPanel
 
-PHPkoru Loader CyberPanel'de 2 komut ile kolayca kurulabilir.
+PHPkoru Loader can be easily installed in CyberPanel with 2 commands.

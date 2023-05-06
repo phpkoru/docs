@@ -1,20 +1,20 @@
-# CyberPanel PHP 7.3 için PHPkoru Kullanımı
+# Using PHPkoru for PHP 7.3 with CyberPanel
 
-## CyberPanel'de PHP 7.3 sürümü için PHPkoru Loader'ın Kurulumu
+## Installation of PHPkoru Loader for PHP version 7.3 with CyberPanel
 
-PHPkoru Loader'i CyberPanel PHP 7.3 modülleri dizinine indir.
+Download the PHPkoru Loader into the CyberPanel PHP 7.3 modules directory.
 ```shell
 wget https://cdn.phpkoru.com/loaders/phpkoru_loader_v1.0.2_lin_7.3.so -O /usr/local/lsws/lsphp73/lib64/php/modules/phpkoru_loader.so
 ```
 
-PHPkoru Loader'i etkinleştir
+Enable PHPkoru Loader
 ```shell
 echo "extension=phpkoru_loader.so" > "/usr/local/lsws/lsphp73/etc/php.d/00-phpkoru.ini"
 ```
 
-## CyberPanel'de PHP 7.3 sürümü için PHPkoru Loader'ın Kaldırması
+## Removing PHPkoru Loader for PHP Version 7.3 from CyberPanel
 
-PHPkoru Loader'ı kaldırmak için aşağıdaki kodu kullanabilirsiniz.
+You can use the following code to uninstall PHPkoru Loader.
 ```shell
 rm -f /usr/local/lsws/lsphp73/etc/php.d/00-phpkoru.ini && rm -f /usr/local/lsws/lsphp73/lib64/php/modules/phpkoru_loader.so
 ```
